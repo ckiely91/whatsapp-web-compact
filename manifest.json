@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Whatsapp Web Compact",
+  "description": "Hide the side menu of Whatsapp Web below 600px width.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
